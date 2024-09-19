@@ -1,0 +1,287 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: yellow;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*transistions*/
+a,
+.btn{
+  transition: all 300ms ease;
+}
+
+nav,.nav-links{
+  display: flex;
+}
+nav{
+  justify-content: space-around;
+  align-items: center;
+  height:17vh ;
+}
+.nav-links{
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+a{
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+a:hover{
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181,181,181);
+}
+.logo{
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(93, 11, 148);
+}
+.logo:hover{
+  cursor: default;
+  color: white;
+}
+.header-text{
+  margin-top:2.5rem;
+  margin-left: 200px;
+  font-style:"Poppins", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 50px;
+}
+.header-text span{
+  color: rgb(93, 11, 148);
+}
+.header-text span:hover{
+  color: black;
+  cursor: pointer;
+}
+.header-text h2{
+  padding-left: 80x;
+}
+
+/*-----about-----*/
+#about{
+  color:black;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 2rem 5rem;
+}
+.about-col-1{
+  flex-basis: 30%;
+}
+.about-col-1 img{
+  width: 80%;
+  border-radius: 20px;
+ 
+}
+.about-col-2{
+  flex-basis: 60%;
+  font-weight: 300;
+
+}
+.subtitle{
+  font-size: 60px;
+  font-weight: 600;
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  
+}
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin-right: 10px 0;
+  font-weight: 400;
+  color: rgb(93, 11, 148);
+  font-size: 14px;
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+.sub-title{
+  text-align: center;
+  font-size: 50px;
+}
+.container1{
+  width: 80%;
+  color:#ddd;
+
+}
+.skillsbar{
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+
+}
+
+
+.html{
+  width: 80%;
+  background-color: rgb(93, 11, 148);
+  border-radius: 15px;
+}
+.html:hover{
+  background-color: black;
+}
+
+
+.css{
+  width: 90%;
+  background-color:rgb(93, 11, 148);
+  border-radius: 15px;
+}
+.css:hover{
+ background-color:black;
+}
+.javascript{
+  width: 70%;
+  background-color: rgb(93, 11, 148);
+  border-radius: 15px;
+}
+.javascript:hover{
+  background-color: black;
+}
+.bootstrap{
+  width: 85%;
+  background-color:rgb(93, 11, 148);
+  border-radius: 15px;
+  }
+.bootstrap.hover{
+  background-color:black ;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35px;
+}
+#fname{
+  width: 40;
+  height: 25px;
+  border-radius: 15px;
+  border: solid;
+  background-color: #cca3d1;
+}
+#email{
+  width: 40;
+  height: 25px;
+  border-radius: 15px;
+  border: solid;
+  background-color: #cca3d1;
+}
+#subject{
+  width: 40;
+  height: 25px;
+  border-radius: 15px;
+  border: solid;
+  background-color: #cca3d1;
+}
+#message{
+  width: 40;
+  height: 25px;
+  border-radius: 15px;
+  border: solid;
+  background-color: #cca3d1;
+}
+.contactus{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.submit{
+    border-radius: 15px;
+    width: 10rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #46084e;
+    border: solid;
+    color: white;
+}
+.insta{
+  width: 50px;
+  height:50px
+}
+.linkdin{
+  width: 50px;
+  height: 50px;
+  
+}
+.social-media{
+  margin-left:30rem;
+  margin-top: 5rem;
+}
+/*--media query---*/
+@media(max-width:565px){
+  .logo{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+  nav{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+  a{
+    font-size: 14px;
+    text-align: center;
+  }
+  .header-text{
+    font-size:25px ;
+    text-align: center;
+    margin-left: 0;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .about-colo-1{
+    margin-left: 100px;
+  }
+  h2{
+    font-size: 50px;
+  }
+}
